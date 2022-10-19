@@ -51,7 +51,7 @@ camera = document.getElementById("camera");
 
 function take_snapshot()
 {
-  webcam.snap(function(data_url) {
+  Webcam.snap(function(data_url) {
     document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'">';
   });
 }
